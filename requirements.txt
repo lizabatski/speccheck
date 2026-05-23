@@ -1,0 +1,9 @@
+# Core dependency: property-based testing engine (drives the over-constraint detector
+# and generates the shared input batch for the under-constraint detector).
+hypothesis>=6.0,<7.0
+
+# Optional: only needed to run the LLM baseline comparison (benchmark/run_benchmark.py
+# --baseline). The harness itself runs fully offline and does NOT require this.
+# Install manually if you want the baseline:
+#   pip install anthropic
+# anthropic>=0.40.0

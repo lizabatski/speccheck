@@ -1,0 +1,10 @@
+task,spec,harness_verdict,kill_rate,over_found,correct
+argmax,good,clean,1.00,False,True
+argmax,under,UNDER,0.86,False,True
+argmax,over,OVER,1.00,True,True
+clamp,good,clean,1.00,False,True
+clamp,under,UNDER,0.67,False,True
+clamp,over,OVER,1.00,True,True
+count_positives,good,clean,1.00,False,True
+count_positives,under,UNDER,0.62,False,True
+count_positives,over,OVER,1.00,True,True

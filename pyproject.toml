@@ -1,0 +1,19 @@
+[project]
+name = "speccheck"
+version = "0.1.0"
+description = "A spec validation harness: property-based fuzzing + mutation testing pointed at the spec."
+requires-python = ">=3.10"
+dependencies = ["hypothesis>=6.0,<7.0"]
+
+[project.optional-dependencies]
+baseline = ["anthropic>=0.40.0"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+speccheck = "speccheck.cli:main"
